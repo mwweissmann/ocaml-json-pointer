@@ -1,0 +1,30 @@
+OASISFormat: 0.4
+Name:        json-pointer
+Version:     0.1
+Synopsis:    JSON pointer
+Authors:     Markus W. Weissmann
+License:     MIT
+Plugins:     META (0.4)
+
+Library "json-pointer"
+  Path:       src
+  BuildTools: ocamlbuild
+  Modules:    Json_pointer
+  BuildDepends: str, yojson, result
+
+Document doclib
+  Title:                API reference for JSON pointer
+  Type:                 ocamlbuild (0.3)
+  Install:              false
+  BuildTools+:          ocamlbuild, ocamldoc
+  XOCamlbuildPath:      src
+  XOCamlbuildLibraries: json-pointer
+
+Executable "eval"
+  Path:       src
+  MainIs:     eval.ml
+  BuildDepends: json-pointer
+  CompiledObject: best
+  BuildTools: ocamlbuild
+  Install: false
+

@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: cca397c47e93f0dca57a9aed5ae1ec2d)
+version = "0.1"
+description = "JSON pointer"
+requires = "str yojson result"
+archive(byte) = "json-pointer.cma"
+archive(byte, plugin) = "json-pointer.cma"
+archive(native) = "json-pointer.cmxa"
+archive(native, plugin) = "json-pointer.cmxs"
+exists_if = "json-pointer.cma"
+# OASIS_STOP
+
