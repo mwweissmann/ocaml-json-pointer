@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: e5b3130b68504428275ff4bf0b062f22)
+# DO NOT EDIT (digest: 360bb14f5168d140625bf94a65e94d19)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -17,10 +17,12 @@ true: annot, bin_annot
 # Library json-pointer
 "src/json-pointer.cmxs": use_json-pointer
 # Executable eval
+<src/eval.{native,byte}>: pkg_bytes
 <src/eval.{native,byte}>: pkg_result
 <src/eval.{native,byte}>: pkg_str
 <src/eval.{native,byte}>: pkg_yojson
 <src/eval.{native,byte}>: use_json-pointer
+<src/*.ml{,i,y}>: pkg_bytes
 <src/*.ml{,i,y}>: pkg_result
 <src/*.ml{,i,y}>: pkg_str
 <src/*.ml{,i,y}>: pkg_yojson

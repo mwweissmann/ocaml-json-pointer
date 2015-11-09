@@ -10,7 +10,7 @@ Library "json-pointer"
   Path:       src
   BuildTools: ocamlbuild
   Modules:    Json_pointer
-  BuildDepends: str, yojson, result
+  BuildDepends: str, yojson, result, bytes
 
 Document doclib
   Title:                API reference for JSON pointer
