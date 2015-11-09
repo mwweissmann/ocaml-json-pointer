@@ -1,6 +1,6 @@
 # OASIS_START
-# DO NOT EDIT (digest: cca397c47e93f0dca57a9aed5ae1ec2d)
-version = "0.1"
+# DO NOT EDIT (digest: 6fb35409025e9590468008347ab5ac1e)
+version = "0.1.0"
 description = "JSON pointer"
 requires = "str yojson result"
 archive(byte) = "json-pointer.cma"
