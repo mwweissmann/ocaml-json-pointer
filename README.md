@@ -25,4 +25,4 @@ let _ =
 
 The json-pointer library is written by [Markus Weissmann](http://www.mweissmann.de).
 
-The source-code of stdint is available under the MIT license.
+The source-code of ocaml-json-pointer is available under the MIT license.
